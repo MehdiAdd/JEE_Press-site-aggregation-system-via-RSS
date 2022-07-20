@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+<ul th:each="e:${listEntities}">
+	<li th:text="Auteur  + ${e.getAuthor()}"></li>
+	<li th:text="${e.getDescription().getValue()}"></li>
+	<li th:text="${e.getLink()}"></li>
+	<li th:text="${e.getAuthor()}"></li>
+<div th:text="${e.getDescription().getValue()}"></div>
+</ul>
+<img src="https://i.kinja-img.com/gawker-media/image/upload/s--ugEEoM7r--/c_fit,fl_progressive,q_80,w_636/3e92dc652954375a6ba55f1760b0d145.jpg" /><p>Fresh herbs are beautiful, fragrant, and vivacious, but they lose their looks and flavor when left simmering in pots of soup or roasting with braised meat dishes. Losing their flavor is kind of the whole point—they are, after all, losing it to your dish—but the look and texture of soggy, heat-withered herbs is…</p><p><a href="https://lifehacker.com/how-to-make-your-own-bouquet-garni-1847141308">Read more...</a></p>
+</body>
+</html>
